@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="pre-title animate__animated animate__fadeIn animation-1">Hola mi nombre es...</div>
+  <h1 class="titl animate__animated animate__fadeIn animation-2">Cristina Osorio</h1>
+  <h2 class="sub-title animate__animated animate__fadeIn animation-3">Soy desarrollador Web</h2>
+  <p class="description animate__animated animate__fadeIn animation-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde architecto itaque
+    qui quae, dolorum, sunt modi odit rerum praesentium delectus reprehenderit enim. Magnam iusto iste pariatur
+    doloremque alias velit!
+  </p>
+  <hr>
+  <div class="video-wrapper animate__animated animate__fadeIn animation-5">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/-xfghqXtamc" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <div class="link-wrapper">
+    <hr>
+    <div class="links d-flex flex-wrap">
+      <div class="block col-12 col-lg-4" *ngFor="let linkObj of links">
+        <a [href]="linkObj.link" target="_black">
+          <div class="block-in">
+            <span [innerHTML]="linkObj.icon"></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

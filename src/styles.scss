@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+:root {
+  --color-1: #00a8e8;
+  --color-2: #fdc500;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-1);
+  color: #ffff;
+  font-family: 'Cabin', sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+@for $i from 1 through 100 {
+  .animation-#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+hr {
+  border-color: #ffffff17;
+  margin: 2rem 0;
+}
+
+a, a:visited, a:hover, a:link {
+  color: #ffff;
+  font-weight: 500;
+}
+
