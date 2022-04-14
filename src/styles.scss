@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 
 :root {
@@ -19,7 +20,7 @@ h1, h2 {
 
 @for $i from 1 through 100 {
   .animation-#{$i} {
-    animation-delay: #{$i / 10}s;
+    animation-delay: #{math.div($i, 10)}s;
   }
 }
 
